@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "PostDetail";
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+
+<section class="maincontent clearfix">
+    <div class="container my-3">
+        <div class="row mb-5">
+            <div class="col-md-12 col-lg-12">
+                <h1 class="title-post">@Model.Title</h1>
+                <p>@Model.Delail</p>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-12">
+                @foreach (var post in Model)
+                {
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="~/@post.Slug"><img src="~/Public/images/post/@post.Img" class="img-fluid" /></a>
+                        </div>
+                        <div class="col=md-8">
+                            <h3>@post.Title</h3>
+                            <p>@post.Delail</p>
+                        </div>
+
+                    </div>
+                }
+            </div>
+        </div>
+
+    </div>
+</section>
+

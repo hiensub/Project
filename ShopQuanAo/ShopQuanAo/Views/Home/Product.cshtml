@@ -1,0 +1,78 @@
+﻿@model PagedList.IPagedList<MyClass.Models.ProductInfo>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Product";
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+<section class="maincontent clearfix">
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-md-3 col-lg-3">
+                <div class="sidebar">
+                    @Html.Action("ListCategory", "Module")
+                    @Html.Action("PostLastNew", "Module")
+
+                </div>
+            </div>
+            <!--end col-md-3 col-lg-3-->
+            <div class="col-md-9 col-lg-9">
+                
+                <div class="row">
+                    @foreach (var product in Model)
+                    {
+                        <div class="col-md-4 mb-4">
+                            <div class="item product-item">
+                                <div class="card" style="width: 100%">
+                                    <a href="~/@product.Slug">
+                                        <img src="~/Public//images/product/@product.Img"
+                                             class="img-fluid card-img-top" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">
+                                            <a href="~/@product.Slug">
+                                                @product.Name
+                                            </a>
+                                        </h5>
+                                        <h5 class="text-center">
+                                            <strong class="text-success">@string.Format("{0:0,0.00,00}", product.PriceSale) <sup>đ</sup></strong>
+                                            <del><span class="text-danger">@product.Price</span></del><sup>đ</sup>
+                                        </h5>
+                                        <div class="btn-group w-100" role="group" aria-label="Basic example">
+                                            <a href="@Url.Action("CartAdd","GioHang",new {productid =product.Id })" class="btn btn-outline-info">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </a>
+                                            <a href="~/@product.Slug" class="btn btn-outline-success"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    <!--end col-md-4-->
+
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="Page navigation example">
+                        @Html.PagedListPager(Model, page => Url.Action("Product", "Home", new { page }))
+                        </nav>
+                        
+                        @*<nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>*@
+                    </div>
+                </div>
+            </div>
+            <!--end row-->
+
+        </div>
+        <!--end col-md-9 col-lg-9-->
+    </div>
+</section>
+<!--end maincontent-->

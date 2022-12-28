@@ -1,0 +1,83 @@
+﻿@model MyClass.Models.Post
+
+@{
+    ViewBag.Title = "Xóa danh mục trang đơn";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Main content -->
+    <section class="content ">
+
+        <!-- Default box -->
+        <div class="card">
+            <div class="card-header">
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="row">
+                        <div class="col-md-6">
+                            <strong>XÁC NHẬN XÓA TRANG ĐƠN</strong>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <a href="@Url.Action("Edit","Page", new { id = Model.Id })" class="btn btn-sm btn-info "><i class="fas fa-edit"></i>  Cập nhật</a>
+                            <a href="@Url.Action("Index","Page")" class="btn btn-sm btn-info "><i class="fas fa-long-arrow-alt-left"></i>  Về danh sách</a>
+                            <button class="btn btn-danger" type="submit"><i class="fas fa-trash"></i> Xóa</button>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <div class="card-body my-2">
+                <table class="table table-bordered">
+                    <tr>
+                        <th style="width:120px">Tên trường</th>
+                        <td>Nội dung</td>
+                    </tr>
+                    <tr>
+                        <td>Tên tang đơn</td>
+                        <td>@Html.DisplayFor(model => model.Title)</td>
+                    </tr>
+                    <tr>
+                        <td>Tên kế thừa</td>
+                        <td> @Html.DisplayFor(model => model.Slug)</td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>Từ khóa</td>
+                        <td>@Html.DisplayFor(model => model.MetaDesc)</td>
+                    </tr>
+                    <tr>
+                        <td>Mô tả</td>
+                        <td>@Html.DisplayFor(model => model.MetaKey)</td>
+                    </tr>
+                    <tr>
+                        <td>Người tạo</td>
+                        <td> @Html.DisplayFor(model => model.CreateBy)</td>
+                    </tr>
+                    <tr>
+                        <td>Ngày tạo</td>
+                        <td>@Html.DisplayFor(model => model.CreateAt)</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ngày sửa</td>
+                        <td> @Html.DisplayFor(model => model.UpdateAt)</td>
+                    </tr>
+                    <tr>
+                        <td>Trạng thái</td>
+                        <td>@Html.DisplayFor(model => model.Status)</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- /.card-body -->
+
+        </div>
+        <!-- /.card -->
+
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

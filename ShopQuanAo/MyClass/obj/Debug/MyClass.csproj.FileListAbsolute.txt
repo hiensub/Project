@@ -1,0 +1,16 @@
+C:\Users\hien\source\repos\ShopQuanAo\MyClass\bin\Debug\MyClass.dll.config
+C:\Users\hien\source\repos\ShopQuanAo\MyClass\bin\Debug\MyClass.dll
+C:\Users\hien\source\repos\ShopQuanAo\MyClass\bin\Debug\MyClass.pdb
+C:\Users\hien\source\repos\ShopQuanAo\MyClass\bin\Debug\EntityFramework.dll
+C:\Users\hien\source\repos\ShopQuanAo\MyClass\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hien\source\repos\ShopQuanAo\MyClass\bin\Debug\EntityFramework.xml
+C:\Users\hien\source\repos\ShopQuanAo\MyClass\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hien\source\repos\ShopQuanAo\MyClass\obj\Debug\MyClass.csproj.CoreCompileInputs.cache
+C:\Users\hien\source\repos\ShopQuanAo\MyClass\obj\Debug\MyClass.dll
+C:\Users\hien\source\repos\ShopQuanAo\MyClass\obj\Debug\MyClass.pdb
+C:\Users\hien\source\repos\ShopQuanAo\MyClass\bin\Debug\PagedList.dll
+C:\Users\hien\source\repos\ShopQuanAo\MyClass\bin\Debug\PagedList.Mvc.dll
+C:\Users\hien\source\repos\ShopQuanAo\MyClass\bin\Debug\PagedList.xml
+C:\Users\hien\source\repos\ShopQuanAo\MyClass\bin\Debug\PagedList.Mvc.xml
+C:\Users\hien\source\repos\ShopQuanAo\MyClass\obj\Debug\MyClass.csproj.AssemblyReference.cache
+C:\Users\hien\source\repos\ShopQuanAo\MyClass\obj\Debug\MyClass.csproj.CopyComplete

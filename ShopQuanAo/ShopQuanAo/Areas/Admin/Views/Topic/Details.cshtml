@@ -1,0 +1,168 @@
+﻿@model MyClass.Models.Topic
+
+@{
+    ViewBag.Title = "Chi tiết danh mục sản phẩm";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Main content -->
+    <section class="content ">
+
+        <!-- Default box -->
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-6">
+                        <strong>CHI TIẾT DANH MỤC SẢN PHẨM</strong>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <a href="@Url.Action("Edit","Topic", new { id = Model.Id })" class="btn btn-sm btn-info "><i class="fas fa-edit"></i>  Cập nhật</a>
+                        <a href="@Url.Action("Index","Topic")" class="btn btn-sm btn-info "><i class="fas fa-long-arrow-alt-left"></i>  Về danh sách</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body my-2">
+                <table class="table table-bordered">
+                    <tr>
+                        <th style="width:120px">Tên trường</th>
+                        <td>Nội dung</td>
+                    </tr>
+                    <tr>
+                        <td>Tên đề tài</td>
+                        <td>@Html.DisplayFor(model => model.Name)</td>
+                    </tr>
+                    <tr>
+                        <td>@Html.DisplayNameFor(model => model.Slug)</td>
+                        <td> @Html.DisplayFor(model => model.Slug)</td>
+                    </tr>
+                    <tr>
+                        <td>Đơn hàng</td>
+                        <td>@Html.DisplayFor(model => model.Orders)</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Người tạo</td>
+                        <td> @Html.DisplayFor(model => model.CreateBy)</td>
+                    </tr>
+                    <tr>
+                        <td>Thời gian tạo</td>
+                        <td>@Html.DisplayFor(model => model.CreateAt)</td>
+                    </tr>
+                    <tr>
+                        <td>Thời gian sửa</td>
+                        <td> @Html.DisplayFor(model => model.UpdateAt)</td>
+                    </tr>
+                    <tr>
+                        <td>Trạng thái</td>
+                        <td>@Html.DisplayFor(model => model.Status)</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- /.card-body -->
+
+        </div>
+        <!-- /.card -->
+
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+<h2>Details</h2>
+
+<div>
+    <h4>Topic</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Slug)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Slug)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ParentId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ParentId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Orders)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Orders)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MetaDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MetaDesc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MetaKey)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MetaKey)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateAt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateAt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdateBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdateBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdateAt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdateAt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+    </dl>
+</div>
+

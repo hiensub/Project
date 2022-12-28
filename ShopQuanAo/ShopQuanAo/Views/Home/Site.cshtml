@@ -1,0 +1,30 @@
+﻿@model IEnumerable<MyClass.Models.Category>
+@{
+    ViewBag.Title = "Site";
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+@section header {
+    <link href="~/Public/plugin/owlcarousel/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/Public/plugin/owlcarousel/css/owl.theme.default.min.css" rel="stylesheet" />
+    <script src="~/Public/plugin/owlcarousel/js/owl.carousel.min.js"></script>
+}
+@Html.Action("Slideshow", "Module")
+<section class="maincontent clearfix">
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                @foreach (var category in Model) {
+                    @Html.Action("HomeProduct", "Home", new {@id = category.Id })
+                }
+                <!--.row-->
+                <!--.row-->
+                <div class="topic-title">
+                    
+                </div>
+                <!--end row-->
+            </div>
+            <!--end col-md-12 col-lg-12-->
+        </div>
+    </div>
+</section>
+<!--end maincontent-->
