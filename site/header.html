@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/plugin/owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugin/owlcarousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/plugin/owlcarousel/js/owl.carousel.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <title>HDLShop</title>
+</head>
+
+<body>
+    <header>
+        <section class="topbar clearfix bd-green-500">
+            <div class="container py-1">
+                <div class="row">
+                    <div class="col-md-6">
+                        Chào mừng bạn đến với <strong>HDL</strong>Shop
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <ul class="nav justify-content-end py-0">
+                            <li class="nav-item">
+                                <a class="nav-link py-0 text-light" href="register.php"><i class="fas fa-user"></i> Đăng
+                                    ký</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-0 text-light" href="login.php"> <i class="fas fa-user"></i> Đăng
+                                    nhập</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="header clearfix">
+            <div class="container my-3">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="logo">
+                            <a href="index.php">
+                                <img src="assets/images/logo.png" class="img-fluid" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <select name="" class="form-select border-right-0" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <option value="">Danh mục sản phẩm</option>
+                                <option value="">Thời trang nam</option>
+                                <option value="">Thời trang nữ</option>
+                                <option value="">Thời trang bé trai</option>
+                                <option value="">Thời trang bé nữ</option>
+                                <option value="">Thời trang thể thao</option>
+                            </select>
+                            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                            <button type="submit" class="input-group-text" id="basic-addon2">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-end">
+                        <a href="cart.php" class="btn btn-success position-relative">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                99+
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mainmenu clearfix bd-green-500">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark bd-green-500">
+                    <div class="container-fluid">
+                        <a class="navbar-brand d-md-none d-sm-block" href="index.php">
+                            <strong class="text-danger"> HDL</strong>Shop
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link text-light text-uppercase active" href="index.php">Trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light text-uppercase" href="introduce.php">Giới thiệu</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link  text-light text-uppercase dropdown-toggle" href="product.php"
+                                        id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Sản phẩm
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="product_category.php">Thời trang nam</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="product_category.php">Thời trang nữ</a></li>
+                                        <li><a class="dropdown-item" href="product_category.php">Thời trang bé trai</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="product_category.php">Thời trang bé nữ</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="product_category.php">Thời trang thể
+                                                thao</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light text-uppercase" href="news.php">Tin tức</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light text-uppercase" href="contact.php">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <section class="maincontent clearfix">
+        <div class="container my-3">
+            <div class="row">
+                <div class="col-md-3 col-lg-3">
+                    <div class="sidebar">
+                        <div class="listcategory mb-4">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-header bd-green-500">
+                                    DANH MỤC SẢN PHẨM
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <a href="product_category.html">Thời trang nam</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="product_category.html">Thời trang nữ</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="product_category.html">Thời trang bé trai</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="product_category.html">Thời trang bé nữ</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="product_category.html">Thời trang thể thao</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="post-news">
+                            <div class="list-group">
+                                <div class="card-header bd-green-500">
+                                    DANH MỤC SẢN PHẨM
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="row mb-3">
+                                        <div class="col-sm-4">
+                                            <img src="assets/images/post/post.jpg" class="img-fluid" alt="" srcset="">
+                                        </div>
+                                        <div class="col-sm-8 pr-0 mr-0">
+                                            <h4 class="post-title">
+                                                <a href="#">Tiêu đề bài viết</a>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-sm-4">
+                                            <img src="assets/images/post/post.jpg" class="img-fluid" alt="" srcset="">
+                                        </div>
+                                        <div class="col-sm-8 pl-0 ml-0">
+                                            <h4 class="post-title">
+                                                <a href="#">Tiêu đề bài viết</a>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-md-3 col-lg-3-->
+                <div class="col-md-9 col-lg-9">
+                    <div class="category-title position-relative">
+                        <h2 class="text-center">THỜI TRANG NAM</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="item product-item">
+                                <div class="card" style="width: 100%">
+                                    <a href="product_detail.html">
+                                        <img src="assets/images/product/ao-thun-nam-1.jpg"
+                                            class="img-fluid card-img-top" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center"><a href="product_detail.html">Tên sản
+                                                phẩm</a></h5>
+                                        <h5 class="text-center">
+                                            <strong class="text-success">200.000 <sup>đ</sup></strong>
+                                            <del><span class="text-danger">290.000</span></del><sup>đ</sup>
+                                        </h5>
+                                        <div class="btn-group w-100" role="group" aria-label="Basic example">
+                                            <a href="#" class="btn btn-outline-info">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-outline-success"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-md-4-->
+                        <div class="col-md-4 mb-4">
+                            <div class="item product-item">
+                                <div class="card" style="width: 100%">
+                                    <a href="product_detail.html">
+                                        <img src="assets/images/product/ao-thun-nam-10.jpg"
+                                            class="img-fluid card-img-top" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center"><a href="product_detail.html">Tên sản
+                                                phẩm</a></h5>
+                                        <h5 class="text-center">
+                                            <strong class="text-success">200.000 <sup>đ</sup></strong>
+                                            <del><span class="text-danger">290.000</span></del><sup>đ</sup>
+                                        </h5>
+                                        <div class="btn-group w-100" role="group" aria-label="Basic example">
+                                            <a href="#" class="btn btn-outline-info"><i
+                                                    class="fas fa-shopping-cart"></i></a>
+                                            <a href="#" class="btn btn-outline-success"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-md-4-->
+                        <div class="col-md-4 mb-4">
+                            <div class="item product-item">
+                                <div class="card" style="width: 100%">
+                                    <a href="product_detail.html">
+                                        <img src="assets/images/product/ao-thun-nam-11.jpg"
+                                            class="img-fluid card-img-top" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center"><a href="product_detail.html">Tên sản
+                                                phẩm</a></h5>
+                                        <h5 class="text-center">
+                                            <strong class="text-success">200.000 <sup>đ</sup></strong>
+                                            <del><span class="text-danger">290.000</span></del><sup>đ</sup>
+                                        </h5>
+                                        <div class="btn-group w-100" role="group" aria-label="Basic example">
+                                            <a href="#" class="btn btn-outline-info"><i
+                                                    class="fas fa-shopping-cart"></i></a>
+                                            <a href="#" class="btn btn-outline-success"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-md-4-->
+                        <div class="col-md-4 mb-4">
+                            <div class="item product-item">
+                                <div class="card" style="width: 100%">
+                                    <a href="product_detail.html">
+                                        <img src="assets/images/product/ao-thun-nam-12.jpg"
+                                            class="img-fluid card-img-top" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center"><a href="product_detail.html">Tên sản
+                                                phẩm</a></h5>
+                                        <h5 class="text-center">
+                                            <strong class="text-success">200.000 <sup>đ</sup></strong>
+                                            <del><span class="text-danger">290.000</span></del><sup>đ</sup>
+                                        </h5>
+                                        <div class="btn-group w-100" role="group" aria-label="Basic example">
+                                            <a href="#" class="btn btn-outline-info"><i
+                                                    class="fas fa-shopping-cart"></i></a>
+                                            <a href="#" class="btn btn-outline-success"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-md-4-->
+                        <div class="col-md-4 mb-4">
+                            <div class="item product-item">
+                                <div class="card" style="width: 100%">
+                                    <a href="product_detail.html">
+                                        <img src="assets/images/product/ao-thun-nam-13.jpg"
+                                            class="img-fluid card-img-top" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center"><a href="product_detail.html">Tên sản
+                                                phẩm</a></h5>
+                                        <h5 class="text-center">
+                                            <strong class="text-success">200.000 <sup>đ</sup></strong>
+                                            <del><span class="text-danger">290.000</span></del><sup>đ</sup>
+                                        </h5>
+                                        <div class="btn-group w-100" role="group" aria-label="Basic example">
+                                            <a href="#" class="btn btn-outline-info"><i
+                                                    class="fas fa-shopping-cart"></i></a>
+                                            <a href="#" class="btn btn-outline-success"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-md-4-->
+                        <div class="col-md-4 mb-4">
+                            <div class="item product-item">
+                                <div class="card" style="width: 100%">
+                                    <a href="product_detail.html">
+                                        <img src="assets/images/product/ao-thun-nam-14.jpg"
+                                            class="img-fluid card-img-top" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center"><a href="product_detail.html">Tên sản
+                                                phẩm</a></h5>
+                                        <h5 class="text-center">
+                                            <strong class="text-success">200.000 <sup>đ</sup></strong>
+                                            <del><span class="text-danger">290.000</span></del><sup>đ</sup>
+                                        </h5>
+                                        <div class="btn-group w-100" role="group" aria-label="Basic example">
+                                            <a href="#" class="btn btn-outline-info"><i
+                                                    class="fas fa-shopping-cart"></i></a>
+                                            <a href="#" class="btn btn-outline-success"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-md-4-->
+                        <div class="col-md-4 mb-4">
+                            <div class="item product-item">
+                                <div class="card" style="width: 100%">
+                                    <a href="product_detail.html">
+                                        <img src="assets/images/product/ao-thun-nam-15.jpg"
+                                            class="img-fluid card-img-top" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center"><a href="product_detail.html">Tên sản
+                                                phẩm</a></h5>
+                                        <h5 class="text-center">
+                                            <strong class="text-success">200.000 <sup>đ</sup></strong>
+                                            <del><span class="text-danger">290.000</span></del><sup>đ</sup>
+                                        </h5>
+                                        <div class="btn-group w-100" role="group" aria-label="Basic example">
+                                            <a href="#" class="btn btn-outline-info"><i
+                                                    class="fas fa-shopping-cart"></i></a>
+                                            <a href="#" class="btn btn-outline-success"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-md-4-->
+                        <div class="col-md-4 mb-4">
+                            <div class="item product-item">
+                                <div class="card" style="width: 100%">
+                                    <a href="product_detail.html">
+                                        <img src="assets/images/product/ao-so-mi-nu-18.jpg"
+                                            class="img-fluid card-img-top" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center"><a href="product_detail.html">Tên sản
+                                                phẩm</a></h5>
+                                        <h5 class="text-center">
+                                            <strong class="text-success">200.000 <sup>đ</sup></strong>
+                                            <del><span class="text-danger">290.000</span></del><sup>đ</sup>
+                                        </h5>
+                                        <div class="btn-group w-100" role="group" aria-label="Basic example">
+                                            <a href="#" class="btn btn-outline-info"><i
+                                                    class="fas fa-shopping-cart"></i></a>
+                                            <a href="#" class="btn btn-outline-success"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-md-4-->
+                        <div class="col-md-4 mb-4">
+                            <div class="item product-item">
+                                <div class="card" style="width: 100%">
+                                    <a href="product_detail.html">
+                                        <img src="assets/images/product/ao-so-mi-nu-19.jpg"
+                                            class="img-fluid card-img-top" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center"><a href="product_detail.html">Tên sản
+                                                phẩm</a></h5>
+                                        <h5 class="text-center">
+                                            <strong class="text-success">200.000 <sup>đ</sup></strong>
+                                            <del><span class="text-danger">290.000</span></del><sup>đ</sup>
+                                        </h5>
+                                        <div class="btn-group w-100" role="group" aria-label="Basic example">
+                                            <a href="#" class="btn btn-outline-info"><i
+                                                    class="fas fa-shopping-cart"></i></a>
+                                            <a href="#" class="btn btn-outline-success"><i class="far fa-eye"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-md-4-->
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!--end row-->
+
+            </div>
+            <!--end col-md-9 col-lg-9-->
+        </div>
+    </section>
+    <footer class="footer">
+        <section class="bg-policy policy clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Quy định đổi trả hàng</h3>
+                        <p>HDLShop sẵn sàng hỗ trợ đổi sản phẩm cho bạn trong vòng 15 ngày trên toàn hệ thống</p>
+                        <h3>Khách hàng thân thiết</h3>
+                        <p>Chính sách khách hàng thân thiết của iKids clothing khi mua đơn hàng trị giá 500.000đ, quý
+                            khách sẽ được cấp ngay thẻ VIP có ưu đãi 15% và 20% khi sinh nhật</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="social">
+                            <h3>Kết nối với HDLShop</h3>
+                            <p>
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </a>
+                            </p>
+
+                        </div>
+                        <div>
+                            <h3>Đăng ký nhận tin từ chúng tôi</h3>
+                            <p>Đăng ký nhận thông tin và nhận nhiều ưu đãi từ HDLShop</p>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Nhập email của bạn"
+                                    aria-describedby="basic-addon2">
+                                <span class="input-group-text" id="basic-addon2"><i
+                                        class="fab fa-telegram-plane"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer clearfix py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="assets/images/logo.png" class="img-fluid" alt="logo">
+                        <p>Địa chỉ trụ sở: Đường Bình Nhâm 79, KP Bình Phước, P. Bình Nhâm, TP. Thuận An, TP.Hồ Chí Minh
+                        </p>
+                        <p>Điện thoại: 0987 093 579</p>
+                        <p>Email: hodienloi@hitu.edu.vn</p>
+                        <p>Website: dienloi.com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Về chúng tôi</h3>
+                        <ul>
+                            <li><a href="index.php">Trang chủ</a></li>
+                            <li><a href="introduce.php">Giới thiệu</a></li>
+                            <li><a href="product.php">Sản phẩm</a></li>
+                            <li><a href="news.php">Tin tức</a></li>
+                            <li><a href="contact.php">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Về chúng tôi</h3>
+                        <ul>
+                            <li><a href="index.php">Trang chủ</a></li>
+                            <li><a href="introduce.php">Giới thiệu</a></li>
+                            <li><a href="product.php">Sản phẩm</a></li>
+                            <li><a href="news.php">Tin tức</a></li>
+                            <li><a href="contact.php">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="copyright clearfix border-top py-3">
+            <div class="container text-center">
+                Bản quyền thuộc về Hồ Diên Lợi | Cung cấp bởi Hồ Diên Lợi
+            </div>
+        </section>
+    </footer>
+    <!--End footer-->
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                dots: false,
+                lazyLoad: true,
+                autoplay: true,
+                autoplayTimeout: 1300,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 2,
+                        nav: false
+                    },
+                    1000: {
+                        items: 4,
+                        nav: true,
+                        loop: false,
+                        margin: 20
+                    }
+                }
+            })
+            $('.owl-carousel-post').owlCarousel({
+                loop: true,
+                margin: 10,
+                dots: false,
+                lazyLoad: true,
+                autoplay: true,
+                autoplayTimeout: 1300,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 2,
+                        nav: false
+                    },
+                    1000: {
+                        items: 3,
+                        nav: true,
+                        loop: false,
+                        margin: 20
+                    }
+                }
+            })
+        })
+    </script>
+
+</body>
+
+</html>
+    <!--.end header-->
